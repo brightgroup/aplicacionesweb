@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@theme {
+  --color-gold: #C8A86B;
+  --color-gold-100: #F5EDD5;
+  --color-gold-200: #E8D5A3;
+  --color-gold-300: #D4B96B;
+  --color-gold-400: #C8A86B;
+  --color-gold-500: #B8944A;
+  --color-gold-600: #A07830;
+  --color-dark: #080808;
+  --color-dark-100: #111111;
+  --color-dark-200: #1a1a1a;
+  --color-dark-300: #252525;
+  --color-dark-400: #333333;
+  --font-display: var(--font-playfair);
+  --font-sans: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #080808;
+  color: #F0EDE8;
+  font-family: var(--font-inter), ui-sans-serif, system-ui, sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #080808;
+}
+::-webkit-scrollbar-thumb {
+  background: #C8A86B;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #E8D5A3;
+}
+
+.font-display {
+  font-family: var(--font-playfair), Georgia, serif;
+}
+
+.text-gradient-gold {
+  background: linear-gradient(135deg, #C8A86B 0%, #E8D5A3 50%, #C8A86B 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.border-gold-gradient {
+  border-image: linear-gradient(135deg, #C8A86B, #E8D5A3, #C8A86B) 1;
+}
